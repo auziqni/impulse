@@ -1,0 +1,53 @@
+[
+  {
+    "tittle": "sec1",
+    "link": [
+      {
+        "text": "About",
+        "link": "/"
+      },
+      {
+        "text": "Info",
+        "link": "/about"
+      },
+      {
+        "text": "FAQ",
+        "link": "/blog"
+      }
+    ]
+  },
+  {
+    "tittle": "sec2",
+    "link": [
+      {
+        "text": "About",
+        "link": "/"
+      },
+      {
+        "text": "Info",
+        "link": "/about"
+      },
+      {
+        "text": "FAQ",
+        "link": "/blog"
+      }
+    ]
+  },
+  {
+    "tittle": "sec3",
+    "link": [
+      {
+        "text": "About",
+        "link": "/"
+      },
+      {
+        "text": "Info",
+        "link": "/about"
+      },
+      {
+        "text": "FAQ",
+        "link": "/blog"
+      }
+    ]
+  }
+]
