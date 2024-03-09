@@ -5,6 +5,7 @@
     "description": "Capitalize on low hanging fruit to identify a ballpark value addedactivity to beta test. Override the digital divide with additionalclickthroughs from DevOps.",
     "image": "https://images.unsplash.com/photo-1513279922550-250c2129b13a?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1950&q=80",
     "category": "Sandy Beaches",
+    "categoryimage": "https://images.unsplash.com/photo-1528855275993-0f4a23fedd62?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1950&q=80",
     "date": "2021-01-01"
   },
   "post2": {
@@ -12,7 +13,8 @@
     "title": "This is my second post",
     "description": "Iterative approaches to corporate strategy foster collaborative thinking to further the overall value proposition. Organically grow the holistic world view of disruptive innovation via workplace diversity and empowerment.",
     "image": "https://images.unsplash.com/photo-1521145239174-279dc2227166?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1950&q=80",
-    "category": "Mountains",
+    "category": "Forest Trees",
+    "categoryimage": "https://images.unsplash.com/photo-1449495169669-7b118f960251?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1951&q=80",
     "date": "2021-01-02"
   },
   "post3": {
@@ -20,7 +22,8 @@
     "title": "This is my third & latest post",
     "description": "Bring to the table win-win survival strategies to ensure proactivedomination. At the end of the day, going forward, a new normal that has evolved from generation X is on the runway heading towards a streamlined cloudsolution.",
     "image": "https://images.unsplash.com/photo-1501631259223-89d4e246ed23?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1960&q=80",
-    "category": "City",
+    "category": "City Street",
+    "categoryimage": "https://images.unsplash.com/uploads/1411070807173e4d6762d/f84a3a01?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1950&q=80",
     "date": "2021-01-03"
   }
 }
