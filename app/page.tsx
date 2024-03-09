@@ -99,10 +99,41 @@ export default function Home() {
           href="/"
           className="bg-black relative w-full md:w-auto md:flex-1 flex items-center justify-center h-72 font-heading text-white uppercase tracking-widest hover:opacity-75"
         >
-          <div className="relative z-10"> category.data.title </div>
+          <div className="relative z-10"> {post.post1.category} </div>
+          <Image
+            src={post.post1.categoryimage}
+            alt=""
+            layout="fill"
+            className=" object-cover"
+          />
           {/* <img src="{{ category.data.image }}" className="absolute inset-0 w-full h-full object-cover opacity-50" /> */}
         </a>
-        {/* {% endfor %} */}
+        <a
+          href="/"
+          className="bg-black relative w-full md:w-auto md:flex-1 flex items-center justify-center h-72 font-heading text-white uppercase tracking-widest hover:opacity-75"
+        >
+          <div className="relative z-10"> {post.post2.category} </div>
+          <Image
+            src={post.post2.categoryimage}
+            alt=""
+            layout="fill"
+            className=" object-cover"
+          />
+          {/* <img src="{{ category.data.image }}" className="absolute inset-0 w-full h-full object-cover opacity-50" /> */}
+        </a>
+        <a
+          href="/"
+          className="bg-black relative w-full md:w-auto md:flex-1 flex items-center justify-center h-72 font-heading text-white uppercase tracking-widest hover:opacity-75"
+        >
+          <div className="relative z-10"> {post.post3.category} </div>
+          <Image
+            src={post.post3.categoryimage}
+            alt=""
+            layout="fill"
+            className=" object-cover"
+          />
+          {/* <img src="{{ category.data.image }}" className="absolute inset-0 w-full h-full object-cover opacity-50" /> */}
+        </a>
       </div>
 
       {/* section post left*/}
@@ -118,7 +149,6 @@ export default function Home() {
             />
           </a>
         </div>
-
         <div className="md:order-first bg-gray-100 p-12 md:p-24 flex justify-end items-center">
           <div className="max-w-md">
             <div className="w-24 h-2 bg-yellow-800 mb-4"></div>
