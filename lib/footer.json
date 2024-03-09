@@ -11,9 +11,9 @@
       {
         "id": 2,
         "text": "Info",
-        "link": "/about"
+        "link": "/"
       },
-      { "id": 3, "text": "FAQ", "link": "/blog" }
+      { "id": 3, "text": "FAQ", "link": "/" }
     ]
   },
   {
@@ -28,9 +28,9 @@
       {
         "id": 2,
         "text": "Info",
-        "link": "/about"
+        "link": "/"
       },
-      { "id": 3, "text": "FAQ", "link": "/blog" }
+      { "id": 3, "text": "FAQ", "link": "/" }
     ]
   },
   {
@@ -45,9 +45,9 @@
       {
         "id": 2,
         "text": "Info",
-        "link": "/about"
+        "link": "/"
       },
-      { "id": 3, "text": "FAQ", "link": "/blog" }
+      { "id": 3, "text": "FAQ", "link": "/" }
     ]
   }
 ]

@@ -7,16 +7,16 @@
   {
     "id": 2,
     "text": "About",
-    "link": "/about"
+    "link": "/"
   },
   {
     "id": 3,
     "text": "Blog",
-    "link": "/blog"
+    "link": "/bog"
   },
   {
     "id": 4,
     "text": "Contact",
-    "link": "/contact"
+    "link": "/"
   }
 ]
