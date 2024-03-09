@@ -1,53 +1,53 @@
 [
   {
+    "id": 1,
     "tittle": "sec1",
-    "link": [
+    "links": [
       {
+        "id": 1,
         "text": "About",
         "link": "/"
       },
       {
+        "id": 2,
         "text": "Info",
         "link": "/about"
       },
-      {
-        "text": "FAQ",
-        "link": "/blog"
-      }
+      { "id": 3, "text": "FAQ", "link": "/blog" }
     ]
   },
   {
+    "id": 2,
     "tittle": "sec2",
-    "link": [
+    "links": [
       {
+        "id": 1,
         "text": "About",
         "link": "/"
       },
       {
+        "id": 2,
         "text": "Info",
         "link": "/about"
       },
-      {
-        "text": "FAQ",
-        "link": "/blog"
-      }
+      { "id": 3, "text": "FAQ", "link": "/blog" }
     ]
   },
   {
+    "id": 3,
     "tittle": "sec3",
-    "link": [
+    "links": [
       {
+        "id": 1,
         "text": "About",
         "link": "/"
       },
       {
+        "id": 2,
         "text": "Info",
         "link": "/about"
       },
-      {
-        "text": "FAQ",
-        "link": "/blog"
-      }
+      { "id": 3, "text": "FAQ", "link": "/blog" }
     ]
   }
 ]
