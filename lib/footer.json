@@ -1,0 +1,53 @@
+[
+  {
+    "id": 1,
+    "tittle": "sec1",
+    "links": [
+      {
+        "id": 1,
+        "text": "About",
+        "link": "/"
+      },
+      {
+        "id": 2,
+        "text": "Info",
+        "link": "/"
+      },
+      { "id": 3, "text": "FAQ", "link": "/" }
+    ]
+  },
+  {
+    "id": 2,
+    "tittle": "sec2",
+    "links": [
+      {
+        "id": 1,
+        "text": "About",
+        "link": "/"
+      },
+      {
+        "id": 2,
+        "text": "Info",
+        "link": "/"
+      },
+      { "id": 3, "text": "FAQ", "link": "/" }
+    ]
+  },
+  {
+    "id": 3,
+    "tittle": "sec3",
+    "links": [
+      {
+        "id": 1,
+        "text": "About",
+        "link": "/"
+      },
+      {
+        "id": 2,
+        "text": "Info",
+        "link": "/"
+      },
+      { "id": 3, "text": "FAQ", "link": "/" }
+    ]
+  }
+]
