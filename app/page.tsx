@@ -1,112 +1,199 @@
+import home from "@/lib/home.json";
+import post from "@/lib/blog.json";
 import Image from "next/image";
 
 export default function Home() {
   return (
-    <main className="flex min-h-screen flex-col items-center justify-between p-24">
-      <div className="z-10 max-w-5xl w-full items-center justify-between font-mono text-sm lg:flex">
-        <p className="fixed left-0 top-0 flex w-full justify-center border-b border-gray-300 bg-gradient-to-b from-zinc-200 pb-6 pt-8 backdrop-blur-2xl dark:border-neutral-800 dark:bg-zinc-800/30 dark:from-inherit lg:static lg:w-auto  lg:rounded-xl lg:border lg:bg-gray-200 lg:p-4 lg:dark:bg-zinc-800/30">
-          Get started by editing&nbsp;
-          <code className="font-mono font-bold">app/page.tsx</code>
-        </p>
-        <div className="fixed bottom-0 left-0 flex h-48 w-full items-end justify-center bg-gradient-to-t from-white via-white dark:from-black dark:via-black lg:static lg:h-auto lg:w-auto lg:bg-none">
+    <main>
+      {/* hero */}
+      <div className="-mt-24 relative w-full py-12 px-12 bg-yellow-900">
+        <div className="relative z-10 text-center py-24 md:py-48">
+          <h1 className="text-white text-center text-3xl md:text-4xl lg:text-5xl xl:text-6xl font-display font-bold mb-12">
+            {/* {home.title} */}A taste of every lifestyle
+          </h1>
           <a
-            className="pointer-events-none flex place-items-center gap-2 p-8 lg:pointer-events-auto lg:p-0"
-            href="https://vercel.com?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
+            href="/"
+            className="inline-block bg-yellow-800 text-white uppercase text-sm tracking-widest font-heading px-8 py-4"
           >
-            By{" "}
-            <Image
-              src="/vercel.svg"
-              alt="Vercel Logo"
-              className="dark:invert"
-              width={100}
-              height={24}
-              priority
-            />
+            {/* {home.button_text} */}Read the blog
           </a>
         </div>
-      </div>
 
-      <div className="relative flex place-items-center before:absolute before:h-[300px] before:w-full sm:before:w-[480px] before:-translate-x-1/2 before:rounded-full before:bg-gradient-radial before:from-white before:to-transparent before:blur-2xl before:content-[''] after:absolute after:-z-20 after:h-[180px] after:w-full sm:after:w-[240px] after:translate-x-1/3 after:bg-gradient-conic after:from-sky-200 after:via-blue-200 after:blur-2xl after:content-[''] before:dark:bg-gradient-to-br before:dark:from-transparent before:dark:to-blue-700 before:dark:opacity-10 after:dark:from-sky-900 after:dark:via-[#0141ff] after:dark:opacity-40 before:lg:h-[360px] z-[-1]">
+        <div className="relative z-10 mx-auto max-w-4xl flex justify-between uppercase text-white font-heading tracking-widest text-sm">
+          <a href="/" className="border-b border-white">
+            {/* {home.link_one_text} */}Find out more
+          </a>
+          <a href="/" className="border-b border-white">
+            {/* {home.link_two_text} */}Get in touch
+          </a>
+        </div>
+
         <Image
-          className="relative dark:drop-shadow-[0_0_0.3rem_#ffffff70] dark:invert"
-          src="/next.svg"
-          alt="Next.js Logo"
-          width={180}
-          height={37}
-          priority
+          src={home.image}
+          alt=""
+          className="w-full h-full absolute inset-0 object-cover opacity-70"
+          layout="fill"
+          // objectFit="contain"
         />
       </div>
 
-      <div className="mb-32 grid text-center lg:max-w-5xl lg:w-full lg:mb-0 lg:grid-cols-4 lg:text-left">
-        <a
-          href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className="group rounded-lg border border-transparent px-5 py-4 transition-colors hover:border-gray-300 hover:bg-gray-100 hover:dark:border-neutral-700 hover:dark:bg-neutral-800/30"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2 className={`mb-3 text-2xl font-semibold`}>
-            Docs{" "}
-            <span className="inline-block transition-transform group-hover:translate-x-1 motion-reduce:transform-none">
-              -&gt;
-            </span>
-          </h2>
-          <p className={`m-0 max-w-[30ch] text-sm opacity-50`}>
-            Find in-depth information about Next.js features and API.
-          </p>
-        </a>
+      <div className="grid grid-cols-1 md:grid-cols-2">
+        <div className="bg-white p-12 md:p-24 flex justify-end items-center">
+          <a href="/">
+            <Image
+              src={post.post3.image}
+              alt=""
+              className="object-cover"
+              width={500}
+              height={500}
+              // objectFit="contain"
+            />
+          </a>
+        </div>
 
-        <a
-          href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          className="group rounded-lg border border-transparent px-5 py-4 transition-colors hover:border-gray-300 hover:bg-gray-100 hover:dark:border-neutral-700 hover:dark:bg-neutral-800/30"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2 className={`mb-3 text-2xl font-semibold`}>
-            Learn{" "}
-            <span className="inline-block transition-transform group-hover:translate-x-1 motion-reduce:transform-none">
-              -&gt;
-            </span>
-          </h2>
-          <p className={`m-0 max-w-[30ch] text-sm opacity-50`}>
-            Learn about Next.js in an interactive course with&nbsp;quizzes!
-          </p>
-        </a>
+        {/* section post right */}
+        <div className="bg-gray-100 p-12 md:p-24 flex justify-start items-center">
+          <div className="max-w-md">
+            <div className="w-24 h-2 bg-yellow-800 mb-4"></div>
+            <h2 className="font-display font-bold text-2xl md:text-3xl lg:text-4xl mb-6">
+              {post.post3.title}
+            </h2>
+            <p className="font-light text-gray-600 text-sm md:text-base mb-6 leading-relaxed">
+              {post.post3.description}
+            </p>
+            <a
+              href="/"
+              className="inline-block border-2 border-yellow-800 font-light text-yellow-800 text-sm uppercase tracking-widest py-3 px-8 hover:bg-yellow-800 hover:text-white"
+            >
+              Read more
+            </a>
+          </div>
+        </div>
+      </div>
 
-        <a
-          href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className="group rounded-lg border border-transparent px-5 py-4 transition-colors hover:border-gray-300 hover:bg-gray-100 hover:dark:border-neutral-700 hover:dark:bg-neutral-800/30"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2 className={`mb-3 text-2xl font-semibold`}>
-            Templates{" "}
-            <span className="inline-block transition-transform group-hover:translate-x-1 motion-reduce:transform-none">
-              -&gt;
-            </span>
-          </h2>
-          <p className={`m-0 max-w-[30ch] text-sm opacity-50`}>
-            Explore starter templates for Next.js.
-          </p>
-        </a>
+      {/* section image */}
+      <Image
+        src={home.full_screen_image}
+        alt=""
+        className="w-full h-screen object-cover"
+        width={500}
+        height={500}
+      />
 
+      {/* section quotes */}
+      <div className="max-w-xl mx-auto text-center py-24 md:py-32">
+        <div className="w-24 h-2 bg-yellow-800 mb-4 mx-auto"></div>
+        <h2 className="font-display font-bold text-3xl md:text-4xl lg:text-5xl mb-6">
+          {/* {home.cta_title} */}We love to travel
+        </h2>
+        <p className="font-light text-gray-600 mb-6 leading-relaxed">
+          {/* {home.cta_description} */}Iterative approaches to corporate
+          strategy foster collaborative thinking to further the overall value
+          proposition.
+        </p>
+      </div>
+
+      {/* section */}
+      <div className="flex flex-wrap bg-black">
         <a
-          href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className="group rounded-lg border border-transparent px-5 py-4 transition-colors hover:border-gray-300 hover:bg-gray-100 hover:dark:border-neutral-700 hover:dark:bg-neutral-800/30"
-          target="_blank"
-          rel="noopener noreferrer"
+          href="/"
+          className="bg-black relative w-full md:w-auto md:flex-1 flex items-center justify-center h-72 font-heading text-white uppercase tracking-widest hover:opacity-75"
         >
-          <h2 className={`mb-3 text-2xl font-semibold`}>
-            Deploy{" "}
-            <span className="inline-block transition-transform group-hover:translate-x-1 motion-reduce:transform-none">
-              -&gt;
-            </span>
-          </h2>
-          <p className={`m-0 max-w-[30ch] text-sm opacity-50 text-balance`}>
-            Instantly deploy your Next.js site to a shareable URL with Vercel.
-          </p>
+          <div className="relative z-10"> {post.post1.category} </div>
+          <Image
+            src={post.post1.categoryimage}
+            alt=""
+            layout="fill"
+            className=" object-cover"
+          />
+          {/* <img src="{{ category.data.image }}" className="absolute inset-0 w-full h-full object-cover opacity-50" /> */}
         </a>
+        <a
+          href="/"
+          className="bg-black relative w-full md:w-auto md:flex-1 flex items-center justify-center h-72 font-heading text-white uppercase tracking-widest hover:opacity-75"
+        >
+          <div className="relative z-10"> {post.post2.category} </div>
+          <Image
+            src={post.post2.categoryimage}
+            alt=""
+            layout="fill"
+            className=" object-cover"
+          />
+          {/* <img src="{{ category.data.image }}" className="absolute inset-0 w-full h-full object-cover opacity-50" /> */}
+        </a>
+        <a
+          href="/"
+          className="bg-black relative w-full md:w-auto md:flex-1 flex items-center justify-center h-72 font-heading text-white uppercase tracking-widest hover:opacity-75"
+        >
+          <div className="relative z-10"> {post.post3.category} </div>
+          <Image
+            src={post.post3.categoryimage}
+            alt=""
+            layout="fill"
+            className=" object-cover"
+          />
+          {/* <img src="{{ category.data.image }}" className="absolute inset-0 w-full h-full object-cover opacity-50" /> */}
+        </a>
+      </div>
+
+      {/* section post left*/}
+      <div className="grid grid-cols-1 md:grid-cols-2">
+        <div className="bg-white p-12 md:p-24 flex justify-start items-center">
+          <a href="/">
+            <Image
+              src={post.post2.image}
+              alt=""
+              className="object-cover"
+              width={500}
+              height={500}
+            />
+          </a>
+        </div>
+        <div className="md:order-first bg-gray-100 p-12 md:p-24 flex justify-end items-center">
+          <div className="max-w-md">
+            <div className="w-24 h-2 bg-yellow-800 mb-4"></div>
+            <h2 className="font-display font-bold text-2xl md:text-3xl lg:text-4xl mb-6">
+              {post.post2.title}
+            </h2>
+            <p className="font-light text-gray-600 text-sm md:text-base mb-6 leading-relaxed">
+              {post.post2.description}
+            </p>
+            <a
+              href="/"
+              className="inline-block border-2 border-yellow-800 font-light text-yellow-800 text-sm uppercase tracking-widest py-3 px-8 hover:bg-yellow-800 hover:text-white"
+            >
+              Read more
+            </a>
+          </div>
+        </div>
+      </div>
+
+      {/* section */}
+      <div className="relative w-full py-12 px-12">
+        <div className="relative z-10 text-center py-12 md:py-24">
+          <h1 className="text-white text-center text-3xl md:text-4xl lg:text-5xl xl:text-6xl font-display font-bold mb-6">
+            {/* {home.footer_cta_title} */}Endlessly customizable
+          </h1>
+          <p className="text-white mb-10 text-base md:text-lg font-bold">
+            {/* {home.footer_cta_description} */}Organically grow the holistic
+            world view of disruptive innovation via workplace diversity and
+            empowerment.
+          </p>
+          <a
+            href="/"
+            className="inline-block bg-yellow-800 text-white uppercase text-sm tracking-widest font-heading px-8 py-4"
+          >
+            {/* {home.footer_cta_button_text} */}Find out more
+          </a>
+        </div>
+
+        {/* <img src="{{ home.footer_cta_image }}" className="w-full h-full absolute inset-0 object-cover" /> */}
+        <Image
+          src={home.footer_cta_image}
+          alt=""
+          className="w-full h-full absolute inset-0 object-cove"
+          layout="fill"
+        />
       </div>
     </main>
   );
